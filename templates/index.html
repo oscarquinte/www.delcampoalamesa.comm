@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Del campo a la mesa </title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/styleindex.css')}}">
+</head>
+
+<body>
+  <div class="video-background"> <video autoplay muted loop id="bgVideo">
+      <source src="{{url_for('static',filename='video/campoalamesa.mp4')}}" type="video/mp4">
+    </video> </div>
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <img src="{{url_for('static',filename='img/Campesino.jpg')}}" class="imagen">
+        </div>
+        <div class="back">
+          <p class="back-heading">La calidad no es negociable, la experiencia...¿Y si nos
+            cuentas?</p>
+          <img src="{{url_for('static',filename='img/logo1.jpeg')}}" alt="" class="logo">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="boton">
+    <a href="/principal">
+      <button> !Quiero saber mas¡</button>
+    </a>
+  </div>
+</body>
+
+</html>

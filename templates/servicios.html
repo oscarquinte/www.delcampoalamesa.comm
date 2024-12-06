@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styleservicios.css')}}">
+    
+</head>
+
+<body>
+<!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./principal">
+                <img src="{{url_for('static',filename='img/logo_resized_95x75.png')}}" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/principal">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nosotros">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sección de Productos 1 -->
+    <section class="productos">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{url_for('static',filename='img/banner1.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Del Campo a la Mesa</h5>
+                        <p class="parrafo:carrousel">Apoyar a los campesinos es fortalecer nuestras raíces y garantizar
+                            un futuro sostenible para todos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url_for('static',filename='img/banner2.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url_for('static',filename='img/banner3.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Contenedor de productos -->
+        <div class="productos-contenedor">
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen1.jpg')}}" alt="Cafe">
+                <h3><strong>Café</strong></h3>
+                <p>Leticia es una caficultora apasionada que cultiva café de alta calidad en su finca, con prácticas
+                    sostenibles.
+                    Vende café listo para consumo y para procesar, garantizando un sabor suave y lleno de tradición en
+                    cada taza.</p>
+                <a href="/productos/cafe">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen2.jpg')}}" alt="Naranja">
+                <h3><strong>Naranja</strong></h3>
+                <p>Naranjas recién cortadas, 100% naturales y sin químicos.
+                    Perfectas para jugos o disfrutar directamente. Sabor y frescura garantizados. <br>
+                    ¡Llama y asegura las tuyas!</p>
+                <a href="/productos/Naranja">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen3.jpg')}}" alt="Platano">
+                <h3><strong>Platano</strong></h3>
+                <p>Ofrecemos plátanos recién cortados, cultivados de manera natural. Frescura y
+                    sabor inigualables, perfectos para cualquier preparación o disfrutar al natural. ¡Contáctanos y
+                    lleva lo mejor de la tierra a tu hogar!.</p>
+                <a href="/productos/platano">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen4.jpg')}}" alt="Mandarina">
+                <h3><strong>Mandarina</strong></h3>
+                <p>Mandarinas Frescas - Del Campo a Tu Mesa. <br> Mandarinas recién cortadas, dulces y jugosas,
+                    cultivadas de manera natural. Ideal para disfrutar en cualquier momento. ¡Contáctanos y consigue las
+                    tuyas!</p>
+                <a href="/productos/mandarina">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Productos 2 -->
+    <section class="productos">
+        <div class="productos-contenedor">
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen5.jpg')}}" alt="Yuca">
+                <h3><strong>Yuca</strong></h3>
+                <p>Ofrezco yuca fresca de mi cultivo, garantizando un producto de calidad y sabor auténtico. Cultivo la
+                    yuca con esmero,
+                    utilizando métodos tradicionales y respetuosos con el medio ambiente. Es ideal para tus comidas,
+                    desde
+                    platos típicos hasta recetas innovadoras. ¡Disfruta de lo mejor de la tierra!</p>
+                <a href="/productos/yuca">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen6.jpg')}}" alt="Aguacate">
+                <h3><strong>Aguacate</strong></h3>
+                <p>En mi finca cultivo aguacates de sabor único, frescos y llenos de nutrientes. Me esfuerzo por
+                    ofrecerte un producto natural,
+                    sin químicos, directo de la tierra a tu mesa. ¡Disfruta de la frescura y calidad de mis aguacates en
+                    cada bocado!</p>
+                <a href="/productos/aguacate">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen7.jpg')}}" alt="Papaya">
+                <h3><strong>Papaya</strong></h3>
+                <p>Papaya fresca y jugosa, cultivada de manera natural. Ideal para disfrutar en jugos, postres o como
+                    fruta fresca. Producto
+                    directo del campo, sin químicos.
+
+                    <strong>¡Compra ahora y saborea lo mejor de la naturaleza!</strong>
+                </p>
+                <a href="/productos/papaya">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen8.avif')}}" alt="Mazorca">
+                <h3><strong>Mazorca</strong></h3>
+                <p>¡Venta directa de maíz en mazorca! Cultivado de manera natural por manos campesinas con esmero y
+                    dedicación. Nuestro maíz es 100% orgánico, de excelente calidad
+                    y sabor, ideal para tus comidas tradicionales. Se vende por kilo o por mayor.</p>
+                <a href="/productos/maiz">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Productos 3 -->
+    <section class="productos">
+        <div class="productos-contenedor">
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen9.jpg')}}" alt="Cacao">
+                <h3>Cacao</h3>
+                <p>¡Disfruta del mejor cacao directo de las fincas a la mesa! Producido de manera sostenible por manos
+                    campesinas,
+                    nuestro cacao es de alta calidad, ideal para chocolateros, reposteros y amantes del buen sabor.
+                    Apoya el comercio
+                    justo y lleva a casa un producto natural, fresco y lleno de sabor.
+
+                    ¡Contáctanos para más detalles y compra directa!</p>
+                <a href="/productos/cacao">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen10.jpg')}}" alt="Caña de Azúcar">
+                <h3><strong>Caña y sus derivados</strong></h3>
+                <p>Desde el corazón del campo, ofrecemos caña de azúcar fresca y panela 100% natural, elaborada de
+                    manera artesanal. Nuestro
+                    producto final es puro, sin aditivos, y preserva todo el sabor y nutrientes de la caña. Perfecta
+                    para endulzar tu vida de forma
+                    saludable y auténtica.
+
+                    ¡Compra directo del productor y apoya el trabajo campesino!</p>
+                <a href="/productos/caña">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen11.png')}}" alt="tomate">
+                <h3><strong>Tomate</strong></h3>
+                <p>
+                    "🌱 Lleva lo mejor del campo a tu mesa 🌿<br><br>
+                    Tú eliges frescura y sabor mientras apoyas a quienes cultivan con amor y
+                    dedicación. ¡Nutre tu vida y fortalece el campo! 🍅"</p>
+                <a href="/productos/tomate">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="{{url_for('static',filename='img/imagen12.jpg')}}" alt="Frmorautas">
+                <h3>Mora</h3>
+                <p>¡Cultivadas con amor para tu hogar! <br> <br>
+                    Disfruta de la frescura y el sabor único de las frutas 
+                    cultivadas con amor en nuestra tierra. ¡Elige calidad, apoya a los 
+                    productores locales y llena tu mesa de salud!"</p>
+                <a href="/productos/mora">
+                    <button class="ver-mas">Ver más</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6"><br>
+                        <div class="line"></div>
+                        <p>"Del Campo a la Mesa" es una iniciativa que facilita la conexión directa
+                            entre productores locales y consumidores, promoviendo el acceso a alimentos frescos,
+                            saludables y cultivados de manera sostenible.</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">SERVICIOS</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="/productos/aguacate">Aguacate y sus derivados.</a></li>
+                            <li><a href="/productos/caña">Productos a base de caña de azúcar</a></li>
+                            <li><a href="/productos/cafe">Café en grano o molido</a></li>
+                            <li class="info"><a href="/servicios">¿Quieres saber más?</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">ACERCA DE</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="/nosotros">Nosotros</a></li>
+                            <li><a href="/servicios">Nuestros Productos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">CONTACTO</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Pereira, Risaralda</li>
+                            <li>(+57) 242424242</li>
+                            <li>www.delcampoalamesa.com</li>
+                        </ul>
+
+                        <div class="social-icons">
+                            <a href="https://x.com/DelcampoAl69024"><i class="ri-twitter-fill"></i></a>
+                            <a href="https://www.instagram.com/delcampoalamesa65/"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-github-fill"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61569919385989&locale=es_LA"><i
+                                    class="ri-facebook-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+:root {
+    --c-dark: #f8f8f8;
+    --c-brand: #4e57d4;
+    --c-brand-light: #699bdd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: rgb(246, 242, 242);
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+    --navbar-toggler-border-radius: 0;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Aqui se le da el estilo general a la sección de productos. */
+.productos {
+    position: relative;
+    padding: 10px; /* Se ha aumentado el padding para dar una separación entre el nav y el banner.*/
+}
+
+/* Contenedor de productos de las card */
+.productos-contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Estilo de las cards */
+.card {
+    background-color: white;
+    width: 20%;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(50, 10, 209, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/*Proporsiona efectos para el botón de la card*/
+.card button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.card button:focus {
+    outline: none;
+}
+
+/* Sección de productos 2 y 3. Usan las mismas clases */
+.productos-contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo para las imágenes de las tarjetas */
+.productos-contenedor .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* FOOTER */
+footer {
+    padding-top: 10px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+

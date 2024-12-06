@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plataforma para conectar pequeños agricultores con consumidores finales, promoviendo el comercio justo y sostenible.">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/stylesobrenosotros.css')}}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./principal">
+                <img src="{{url_for('static',filename='img/logo_resized_95x75.png')}}" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/principal">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nosotros">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <section id="nosotros" class="py-4">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-block w-100 p-4 bg-light rounded">
+                                <h3>Nuestra Historia</h3>
+                                <p>La idea de nuestra plataforma surgió cuando nos dimos cuenta de las dificultades que
+                                    enfrentan los pequeños agricultores para acceder a mercados más amplios. Inspirados
+                                    por su dedicación y la necesidad de prácticas comerciales más justas, decidimos
+                                    crear esta plataforma para hacer la diferencia.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100 p-4 bg-light rounded">
+                                <h3>Valores y Filosofía</h3>
+                                <p>Nos guiamos por valores como la sostenibilidad, la transparencia y la justicia
+                                    económica. Creemos en una agricultura responsable y en proporcionar a los
+                                    productores y consumidores una experiencia de comercio justo y directo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="mision-vision" class="py-4">
+            <div class="container">
+                <h2>Misión y Visión</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="{{url_for('static',filename='img/img1.jpeg')}}" class="card-img-top" alt="Imagen de misión">
+                            <div class="card-body">
+                                <h3 class="card-title">Misión</h3>
+                                <p class="card-text">
+                                    Facilitar el acceso directo entre los productores agrícolas y los consumidores
+                                    finales a través de una plataforma web accesible y eficiente, que promueva la
+                                    frescura y calidad de los productos locales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="{{url_for('static',filename='img/img2.jpeg')}}" class="card-img-top" alt="Imagen de visión">
+                            <div class="card-body">
+                                <h3 class="card-title">Visión</h3>
+                                <p class="card-text">
+                                    Convertirnos en la plataforma líder en la conexión directa entre productores
+                                    agrícolas y consumidores finales, promoviendo una economía más justa y sostenible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="stats-container mt-4 container">
+            <h3>Estadísticas</h3>
+            <p>Durante el periodo 2020-2022, se comercializaron 337 toneladas de productos del campo.</p>
+            <h3 class="card-title">Estadísticas de Campesinos en Pereira</h3>
+            <p>
+                Durante el periodo 2020-2022, se comercializaron 337 toneladas de productos del campo a través de
+                mercatones, beneficiando a más de 500 productores. Para 2024, se proyecta un crecimiento en la
+                producción agrícola del 2.0% y un aumento del 8.1% en la producción cafetera.
+            </p>
+            <h4 class="mt-3">Tipos de Cultivos</h4>
+
+            <img src="data:image/png;base64,{{ grafico_barras }}" alt="Gráfico de Barras" /> <br>
+            <img src="data:image/png;base64,{{ grafico_pastel }}" alt="Gráfico Circular" />
+
+            <ol>
+                <li><strong>Café:</strong> Producción de aproximadamente 1.000 toneladas en 2021.</li>
+                <li><strong>Frutas:</strong> Cultivos como plátanos y maracuyás alcanzaron las 2.500 toneladas en 2021.
+                </li>
+                <li><strong>Hortalizas:</strong> Producción de zanahorias, lechugas y espinacas, totalizando 1.200
+                    toneladas.</li>
+                <li><strong>Leguminosas:</strong> Cultivos como frijoles y maíz sumaron 800 toneladas.</li>
+            </ol>
+        </div>
+
+
+        <div id="map" class="container py-4">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.742240051874!2d-75.71565482526034!3d4.814261795161226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e388757ef6d2d13%3A0x9de5a1486a709485!2sPlaza%20De%20Mercado%20La%2041!5e0!3m2!1ses!2sco!4v1733365983149!5m2!1ses!2sco" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-3 col-sm-6"><br>
+                    <div class="line"></div>
+                    <p>"Del Campo a la Mesa" es una iniciativa que facilita la conexión directa
+                        entre productores locales y consumidores, promoviendo el acceso a alimentos frescos,
+                        saludables y cultivados de manera sostenible.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">SERVICIOS</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="/productos/aguacate">Aguacate y sus derivados.</a></li>
+                        <li><a href="/productos/caña">Productos a base de caña de azúcar</a></li>
+                        <li><a href="/productos/cafe">Café en grano o molido</a></li>
+                        <li class="info"><a href="/servicios">¿Quieres saber más?</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">ACERCA DE</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="/nosotros">Nosotros</a></li>
+                        <li><a href="/servicios">Nuestros Productos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">CONTACTO</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li>Pereira, Risaralda</li>
+                        <li>(+57) 242424242</li>
+                        <li>www.delcampoalamesa.com</li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <a href="https://x.com/DelcampoAl69024"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.instagram.com/delcampoalamesa65/"><i class="ri-instagram-fill"></i></a>
+                        <a href="#"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61569919385989&locale=es_LA"><i
+                                class="ri-facebook-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>

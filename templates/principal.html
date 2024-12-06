@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Del campo a la Mesa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styleppal.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styleppal.css')}}">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <div>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/principal">
+                    <img src="{{url_for('static',filename='img/logo_resized_95x75.png')}}"" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/principal">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/nosotros">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Encabezado -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">Del campo a la Mesa
+                    </h1>
+                    <h5 class="text-white mt-3 mb-4" data-aos="fade-right">Somos un equipo el cual quiere darle
+                        visibilidad a los campesinos de nuestro pais</h5>
+                    <div data-aos="fade-up" data-aos-delay="50">
+                        <a href="/nosotros" class="btn btn-brand me-2">Sobre nosotros</a>
+                        <a href="/servicios" class="btn btn-light ms-2">Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Nuestra Galeria</h1>
+                        <div class="line"></div>
+                        <p>Imagenes tomadas del campo colombiano</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                    <div class="portfolio-item image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/EjeCafetero4.jpg')}}" style="object-fit: cover;"
+                                alt="">
+                        </div>
+                        <a href="/{{url_for('static',filename='img/EjeCafetero4.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="portfolio-item image-zoom mt-4">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/campo5.png')}}" style="object-fit: cover;"
+                                alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/campo5.png')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="portfolio-item image-zoom mt-4">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/campo1.jpg')}}" style="object-fit: cover;"
+                                alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/campo1.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="portfolio-item image-zoom mt-4">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/campo2.jpg')}}" style="object-fit: cover;"
+                                alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/campo2.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="portfolio-item image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/campo-colombiano1.jpg')}}"
+                                style="object-fit: cover;" alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/campo-colombiano1.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="portfolio-item image-zoom mt-4">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/Campo-colombiano-2.jpg')}}"
+                                style="object-fit: cover;" alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/Campo-colombiano-2.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="portfolio-item image-zoom mt-4 h-10">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/campo4.jpg')}}"
+                                style="object-fit: cover;" alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/Ccampo4.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                    <div class="portfolio-item image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/campo-colombiano3.jpg')}}"
+                                style="object-fit: cover;" alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/campo-colombiano3.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="portfolio-item image-zoom mt-4">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/campo3.jpg')}}" style="object-fit: cover;"
+                                alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/campo3.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="portfolio-item image-zoom mt-4">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/finca.jpg')}}" style="object-fit: cover;" alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/finca.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                    <div class="portfolio-item image-zoom mt-4">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/vacca.jpg')}}" style="object-fit: cover;" alt="">
+                        </div>
+                        <a href="{{url_for('static',filename='img/vacca.jpg')}}" data-fancybox="gallery"
+                            class="iconbox"><i class="ri-search-2-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- equipo de trabajo -->
+    <section id="team" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Equipo de trabajo</h1>
+                        <p>El equipo de desarrollo detrás de la implementación de la página web Del Campo a la Mesa
+                            está conformado por profesionales apasionados por conectar a los productores locales con
+                            los consumidores finales a través de una plataforma innovadora, funcional y amigable. Su
+                            enfoque combina el uso de tecnologías modernas con un diseño intuitivo, asegurando
+                            que los usuarios puedan acceder fácilmente a productos frescos y de calidad
+                            directamente desde el campo. Este equipo trabaja con un compromiso sólido
+                            hascia la sostenibilidad, la eficiencia y la promoción de prácticas responsables
+                            en la cadena de suministro alimentario. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center ">
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/valen.jpeg')}}" alt="">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Valentina Henao Pimienta</h4>
+                            <p class="mb-0 text-white">Diseñadora Perfiles Campesinos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/jesus.jpeg')}}" alt="">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Jesus Alberto Uchima Largo</h4>
+                            <p class="mb-0 text-white">Creador de la Sección Sobre Nosotros</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/diego.jpeg')}}" alt="">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Deigo Alejandro Alzate</h4>
+                            <p class="mb-0 text-white">Creador del Index</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/juan.jpeg')}}" alt="">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Juan Manuel Villegas Morales</h4>
+                            <p class="mb-0 text-white">Creador de la pagina Principal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/talentotech.jpg')}}" alt="">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Talento Tech</h4>
+                            <p class="mb-0 text-white">"Gracias, Talento Tech, por ser la chispa 
+                                que enciende nuestro potencial. Su formación impulsa nuestra visión y nos equipa para construir un futuro mejor. 🌟"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="{{url_for('static',filename='img/oscar.jpeg')}}" alt="">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Oscar Armando Quintero Hernandez</h4>
+                            <p class="mb-0 text-white">Encargado de la Sección de Servicios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section-padding bg-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 text-white fw-semibold">Contactanos</h1>
+                        <div class="line bg-white"></div>
+                        <p class="text-white"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
+                <div class="col-lg-8">
+                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Nombres">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Apellidos">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="email" class="form-control" placeholder="Ingrese correo electronico">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="text" class="form-control" placeholder="Asunto">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <textarea name="message" rows="5" class="form-control"
+                                placeholder="Deje un mensaje"></textarea>
+                        </div>
+                        <div class="form-group col-lg-12 d-grid">
+                            <button class="btn btn-brand">Enviar Datos</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6"><br>
+                        <div class="line"></div>
+                        <p>"Del Campo a la Mesa" es una iniciativa que facilita la conexión directa
+                            entre productores locales y consumidores, promoviendo el acceso a alimentos frescos,
+                            saludables y cultivados de manera sostenible.</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">SERVICIOS</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="/productos/aguacate">Aguacate y sus derivados.</a></li>
+                            <li><a href="/productos/caña">Productos a base de caña de azúcar</a></li>
+                            <li><a href="/productos/cafe">Café en grano o molido</a></li>
+                            <li class="info"><a href="/servicios">¿Quieres saber más?</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">ACERCA DE</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="/nosotros">Nosotros</a></li>
+                            <li><a href="/servicios">Nuestros Productos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">CONTACTO</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Pereira, Risaralda</li>
+                            <li>(+57) 242424242</li>
+                            <li>www.delcampoalamesa.com</li>
+                        </ul>
+
+                        <div class="social-icons">
+                            <a href="https://x.com/DelcampoAl69024"><i class="ri-twitter-fill"></i></a>
+                            <a href="https://www.instagram.com/delcampoalamesa65/"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-github-fill"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61569919385989&locale=es_LA"><i
+                                    class="ri-facebook-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--<script src="./assets/js/main.js"></script>-->
+</body>
+
+</html>
